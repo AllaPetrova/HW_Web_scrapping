@@ -44,10 +44,5 @@ for article_tag in article_tags:
 
     for keyword in KEYWORDS:
         if keyword in article_body or keyword in article_header:
-            article_parsed = {
-                "article_pub_time": article_pub_time,
-                "article_header": article_header,
-                "article_link": article_link
-                }
             print(f"{article_pub_time} – {article_header} – {article_link}")
 
